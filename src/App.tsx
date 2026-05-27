@@ -1,5 +1,76 @@
 import './index.css';
 
+const teamMembers = [
+  {
+    name: 'Gustavo Henrique Santos Bonfim',
+    image: '/team/gustavo.jpg',
+    initials: 'GB',
+  },
+  {
+    name: 'Kayky Paschoal Ribeiro',
+    image: '/team/kayky.jpg',
+    initials: 'KR',
+  },
+  {
+    name: 'Lucas Yuji Farias Umada',
+    image: '/team/lucas.jpg',
+    initials: 'LU',
+  },
+  {
+    name: 'Natan Eguchi dos Santos',
+    image: '/team/natan.jpg',
+    initials: 'NS',
+  },
+  {
+    name: 'João Pedro Marques Rodrigues',
+    image: '/team/joao.jpg',
+    initials: 'JR',
+  },
+];
+
+const patients = [
+  {
+    name: 'Ana R.',
+    region: 'Comunidade Ribeirinha',
+    symptoms: 'Febre e tontura',
+    connection: 'Instável',
+    distance: '180 km',
+    climateRisk: 'Chuva intensa',
+    priority: 'Urgente com barreira de acesso',
+    level: 'high',
+  },
+  {
+    name: 'João M.',
+    region: 'Zona rural próxima',
+    symptoms: 'Febre moderada',
+    connection: 'Boa',
+    distance: '12 km',
+    climateRisk: 'Baixo',
+    priority: 'Atenção',
+    level: 'medium',
+  },
+  {
+    name: 'Carla S.',
+    region: 'Área isolada',
+    symptoms: 'Falta de ar',
+    connection: 'Instável',
+    distance: '95 km',
+    climateRisk: 'Risco de enchente',
+    priority: 'Urgente',
+    level: 'high',
+  },
+  {
+    name: 'Pedro L.',
+    region: 'Distrito remoto',
+    symptoms: 'Dor leve',
+    connection: 'Média',
+    distance: '40 km',
+    climateRisk: 'Normal',
+    priority: 'Baixo risco',
+    level: 'low',
+  },
+];
+
 function App() {
   return (
     <main className="app">
@@ -14,7 +85,7 @@ function App() {
           </p>
 
           <p className="description">
-            A solução combina dados clínicos, localização geográfica, conectividade via satélite,
+            O Medistar combina dados clínicos, localização geográfica, conectividade via satélite,
             riscos climáticos e barreiras de acesso para apoiar a priorização de atendimentos
             médicos remotos.
           </p>
@@ -24,8 +95,8 @@ function App() {
               Ver dashboard
             </a>
 
-            <a href="#solution" className="secondary-button">
-              Entender solução
+            <a href="#problem" className="secondary-button">
+              Entender problema
             </a>
           </div>
         </div>
@@ -40,19 +111,102 @@ function App() {
         </div>
       </section>
 
-      <section id="solution" className="section">
-        <span className="tag">Problema</span>
-        <h2>Telemedicina tradicional não considera todo o contexto da região.</h2>
+      <section id="identity" className="section identity-section">
+        <span className="tag">Identidade do produto</span>
+        <h2>Uma solução para tornar a telemedicina mais contextualizada, justa e eficiente.</h2>
+
+        <div className="info-grid">
+          <div className="info-card">
+            <h3>Nome</h3>
+            <p>Medistar</p>
+          </div>
+
+          <div className="info-card">
+            <h3>Propósito</h3>
+            <p>
+              Apoiar a triagem médica remota em regiões isoladas, considerando não apenas os dados
+              clínicos, mas também o contexto espacial, climático e de conectividade do paciente.
+            </p>
+          </div>
+
+          <div className="info-card">
+            <h3>Contexto</h3>
+            <p>
+              A solução simula uma camada inteligente que poderia ser integrada a plataformas de
+              telemedicina já existentes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="problem" className="section">
+        <span className="tag">Problema espacial</span>
+        <h2>Regiões isoladas exigem mais do que uma triagem clínica tradicional.</h2>
+
         <p>
-          Em regiões isoladas, dois pacientes com sintomas parecidos podem ter prioridades
-          diferentes dependendo da distância até o hospital, da qualidade da conexão, do clima e da
-          possibilidade real de deslocamento.
+          Plataformas comuns de telemedicina analisam principalmente os dados clínicos do paciente.
+          Porém, em comunidades remotas, o risco real também depende de fatores como distância até
+          hospitais, qualidade da conexão, clima severo, enchentes, queimadas, isolamento geográfico
+          e dificuldade de transporte.
+        </p>
+
+        <p>
+          Com o apoio de dados geoespaciais, conectividade via satélite e informações ambientais
+          simuladas, o Medistar melhora a priorização dos atendimentos e ajuda médicos remotos a
+          tomarem decisões com mais contexto.
         </p>
       </section>
 
+      <section className="section ods-section">
+        <span className="tag">ODS conectado</span>
+        <h2>ODS 3 — Saúde e Bem-Estar</h2>
+
+        <p>
+          O Medistar está conectado ao ODS 3 por buscar melhorar o acesso à saúde em regiões
+          isoladas, apoiando a telemedicina com dados espaciais e priorização inteligente de
+          atendimento.
+        </p>
+
+        <div className="ods-grid">
+          <div className="info-card">
+            <h3>ODS principal</h3>
+            <p>ODS 3 — Saúde e Bem-Estar</p>
+          </div>
+
+          <div className="info-card">
+            <h3>ODS complementar</h3>
+            <p>ODS 9 — Indústria, Inovação e Infraestrutura</p>
+          </div>
+
+          <div className="info-card">
+            <h3>Impacto social</h3>
+            <p>
+              Redução de desigualdades no acesso à saúde para comunidades remotas, ribeirinhas,
+              rurais ou de difícil deslocamento.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="dashboard" className="section dashboard-section">
-        <span className="tag">Dashboard simulado</span>
-        <h2>Fila inteligente de atendimento</h2>
+        <span className="tag">Funcionamento da solução</span>
+        <h2>Dashboard simulado de priorização médica com dados espaciais.</h2>
+
+        <p>
+          A aplicação recebe dados clínicos do paciente e adiciona informações externas da região,
+          como conexão via satélite, distância até unidade de saúde, risco climático e dificuldade de
+          deslocamento. Com isso, gera uma prioridade de atendimento.
+        </p>
+
+        <div className="flow">
+          <div>Dados clínicos</div>
+          <span>+</span>
+          <div>Dados espaciais</div>
+          <span>+</span>
+          <div>Risco regional</div>
+          <span>=</span>
+          <div>Prioridade médica</div>
+        </div>
 
         <div className="dashboard-grid">
           <div className="metric-card">
@@ -80,45 +234,77 @@ function App() {
           <div className="table-header">
             <span>Paciente</span>
             <span>Região</span>
+            <span>Sintomas</span>
             <span>Conexão</span>
             <span>Distância</span>
+            <span>Risco</span>
             <span>Prioridade</span>
           </div>
 
-          <div className="table-row">
-            <span>Ana R.</span>
-            <span>Comunidade Ribeirinha</span>
-            <span>Instável</span>
-            <span>180 km</span>
-            <strong className="priority high">Urgente</strong>
+          {patients.map((patient) => (
+            <div className="table-row" key={patient.name}>
+              <span>{patient.name}</span>
+              <span>{patient.region}</span>
+              <span>{patient.symptoms}</span>
+              <span>{patient.connection}</span>
+              <span>{patient.distance}</span>
+              <span>{patient.climateRisk}</span>
+              <strong className={`priority ${patient.level}`}>{patient.priority}</strong>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section architecture-section">
+        <span className="tag">Azure Cloud</span>
+        <h2>Arquitetura preparada para Secure DevOps.</h2>
+
+        <p>
+          A aplicação será publicada no Azure App Service, com deploy automatizado via GitHub
+          Actions, credenciais protegidas em GitHub Secrets, secrets da solução no Azure Key Vault e
+          monitoramento com Application Insights.
+        </p>
+
+        <div className="architecture-grid">
+          <div className="info-card">
+            <h3>Deploy</h3>
+            <p>GitHub Actions com publicação automática no Azure App Service.</p>
           </div>
 
-          <div className="table-row">
-            <span>João M.</span>
-            <span>Zona rural</span>
-            <span>Boa</span>
-            <span>12 km</span>
-            <strong className="priority medium">Atenção</strong>
+          <div className="info-card">
+            <h3>Segurança</h3>
+            <p>Uso de GitHub Secrets, Azure Key Vault e controle de acesso por IAM.</p>
           </div>
 
-          <div className="table-row">
-            <span>Carla S.</span>
-            <span>Área isolada</span>
-            <span>Instável</span>
-            <span>95 km</span>
-            <strong className="priority high">Urgente</strong>
+          <div className="info-card">
+            <h3>Monitoramento</h3>
+            <p>Application Insights, métricas da aplicação, logs e regra de alerta.</p>
           </div>
         </div>
       </section>
 
-      <section className="section">
-        <span className="tag">Azure Cloud</span>
-        <h2>Arquitetura preparada para DevSecOps.</h2>
-        <p>
-          A aplicação será publicada no Azure App Service, com deploy automatizado via GitHub
-          Actions, credenciais protegidas em GitHub Secrets, secrets da solução no Azure Key Vault
-          e monitoramento com Application Insights.
-        </p>
+      <section id="team" className="section team-section">
+        <span className="tag">Equipe</span>
+        <h2>Integrantes do projeto</h2>
+
+        <div className="team-grid">
+          {teamMembers.map((member) => (
+            <article className="team-member" key={member.name}>
+              <div className="avatar">
+                <img
+                  src={member.image}
+                  alt={`Foto de ${member.name}`}
+                  onError={(event) => {
+                    event.currentTarget.style.display = 'none';
+                  }}
+                />
+                {/* <span>{member.initials}</span> */}
+              </div>
+
+              <h3>{member.name}</h3>
+            </article>
+          ))}
+        </div>
       </section>
     </main>
   );
