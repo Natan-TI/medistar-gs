@@ -4,32 +4,60 @@ export function HeroSection() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <span className="tag">Global Solution • Indústria Espacial • Telemedicina</span>
+        <span className="tag">Global Solution • Space Health Intelligence</span>
 
-        <h1>Medistar</h1>
+        <h1>
+          Telemedicina inteligente para regiões isoladas.
+        </h1>
 
         <p className="subtitle">
-          Camada inteligente de dados espaciais para apoiar a telemedicina em regiões isoladas.
+          O Medistar usa dados espaciais, conectividade via satélite e contexto regional para
+          priorizar atendimentos médicos remotos com mais precisão.
         </p>
 
         <p className="description">
-          O Medistar combina dados clínicos, localização geográfica, conectividade via satélite,
-          riscos climáticos e barreiras de acesso para apoiar a priorização de atendimentos médicos
-          remotos.
+          A solução simula uma camada de inteligência capaz de combinar dados clínicos com fatores
+          geográficos, climáticos e de conectividade, ajudando médicos a tomarem decisões mais
+          rápidas em comunidades remotas.
         </p>
 
         <div className="hero-actions">
           <a href="#dashboard" className="primary-button">
-            Ver dashboard
+            Explorar dashboard
           </a>
 
           <a href="#problem" className="secondary-button">
-            Entender problema
+            Conhecer problema
           </a>
+        </div>
+
+        <div className="hero-stats">
+          <div>
+            <strong>24</strong>
+            <span>pacientes simulados</span>
+          </div>
+
+          <div>
+            <strong>8</strong>
+            <span>regiões isoladas</span>
+          </div>
+
+          <div>
+            <strong>5</strong>
+            <span>alertas críticos</span>
+          </div>
         </div>
       </div>
 
-      <HeroCard />
+      <div className="hero-visual">
+        <div className="planet">
+          <div className="planet-glow" />
+          <div className="satellite satellite-one">▣</div>
+          <div className="satellite satellite-two">◆</div>
+        </div>
+
+        <HeroCard />
+      </div>
     </section>
   );
 }

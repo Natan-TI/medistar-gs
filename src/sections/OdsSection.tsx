@@ -2,7 +2,7 @@ import { InfoCard } from '../components/InfoCard';
 
 export function OdsSection() {
   return (
-    <section className="section ods-section">
+    <section id="ods" className="section ods-section">
       <span className="tag">ODS conectado</span>
 
       <h2>ODS 3 — Saúde e Bem-Estar</h2>

@@ -2,7 +2,7 @@ import { InfoCard } from '../components/InfoCard';
 
 export function ArchitectureSection() {
   return (
-    <section className="section architecture-section">
+    <section id="architecture" className="section architecture-section">
       <span className="tag">Azure Cloud</span>
 
       <h2>Arquitetura preparada para Secure DevOps.</h2>
