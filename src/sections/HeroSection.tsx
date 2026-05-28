@@ -6,6 +6,8 @@ export function HeroSection() {
       <div className="hero-content">
         <span className="tag">Global Solution • Space Health Intelligence</span>
 
+        <div className="hero-brand-name">Medistar</div>
+
         <h1>
           Telemedicina inteligente para regiões isoladas.
         </h1>
