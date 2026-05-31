@@ -15,7 +15,6 @@ export function TeamMemberCard({ name, image, initials }: TeamMemberCardProps) {
             event.currentTarget.style.display = 'none';
           }}
         />
-
         <span>{initials}</span>
       </div>
 
