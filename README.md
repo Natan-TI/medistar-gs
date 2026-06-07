@@ -249,5 +249,5 @@ Projeto acadêmico desenvolvido para fins educacionais no contexto da Global Sol
 
 ## 🔗 Links
 
-- Aplicação publicada: `https://webapp-medistar-gs-cvacfuhdfudmgect.brazilsouth-01.azurewebsites.net`
-- Repositório GitHub: `https://github.com/Natan-TI/medistar-gs`
+- Aplicação publicada: https://webapp-medistar-gs-cvacfuhdfudmgect.brazilsouth-01.azurewebsites.net
+- Repositório GitHub: https://github.com/Natan-TI/medistar-gs
