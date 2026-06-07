@@ -182,7 +182,7 @@ medistar-gs/
 Clone o repositório:
 
 ```bash
-git clone <https://github.com/Natan-TI/medistar-gs>
+git clone https://github.com/Natan-TI/medistar-gs
 ```
 
 Acesse a pasta do projeto:
@@ -249,5 +249,5 @@ Projeto acadêmico desenvolvido para fins educacionais no contexto da Global Sol
 
 ## 🔗 Links
 
-- Aplicação publicada: `<https://webapp-medistar-gs-cvacfuhdfudmgect.brazilsouth-01.azurewebsites.net>`
-- Repositório GitHub: `<https://github.com/Natan-TI/medistar-gs>`
+- Aplicação publicada: `https://webapp-medistar-gs-cvacfuhdfudmgect.brazilsouth-01.azurewebsites.net`
+- Repositório GitHub: `https://github.com/Natan-TI/medistar-gs`
