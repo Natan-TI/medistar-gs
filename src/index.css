@@ -1107,9 +1107,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .identity-visual {
-  position: sticky;
-  top: 110px;
-  align-self: start;
+  align-self: center;
 }
 
 /* ── Product Mockup Card ─────────────────────────────────── */
